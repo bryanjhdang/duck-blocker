@@ -2,7 +2,7 @@
 
 A Google Chrome site blocking extension where a duck holds you accountable to your work. 
 
-The duck will mind its own business on the screen while you do your work. Create and maintain a list of websites to your blocklist to keep your mind focused on studying or working, and don't visit any of your blocked tabs, unless you want to face the wrath of the duck.
+The duck will mind its own business on the screen while you do your work. Create and maintain a list of websites to your blocklist to keep your mind focused on studying or working, and don't visit any of your blocked tabs unless you want to face the wrath of the duck.
 
 ## How to build + run locally
 1. Clone the repo
