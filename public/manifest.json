@@ -3,13 +3,15 @@
   "name": "vite-ts-react-test",
   "version": "1.0",
   "description": "",
+  "options_page": "options.html",
   "action": {
       "default_popup": "index.html"
   },
   "permissions": [
       "scripting",
       "tabs",
-      "activeTab"
+      "activeTab",
+      "storage"
   ],
   "host_permissions": [
       "https://*/*",
