@@ -1,7 +1,7 @@
 // import { useState } from 'react'
-import './App.css'
+import './Popup.css'
 
-function App() {
+function Popup() {
   // const [count, setCount] = useState(0) 
   const changeColorOnClick = async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -60,4 +60,4 @@ function App() {
   )
 }
 
-export default App
+export default Popup
