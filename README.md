@@ -1,30 +1,12 @@
-# React + TypeScript + Vite
+# Duck Blocker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Google Chrome site blocking extension where a duck holds you accountable to your work. 
 
-Currently, two official plugins are available:
+The duck will mind its own business on the screen while you do your work. Create and maintain a list of websites to your blocklist to keep your mind focused on studying or working, and don't visit any of your blocked tabs unless you want to face the wrath of the duck.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## How to build + run locally
+1. Clone the repo
+2. `npm install`
+3. `npm run build`
+4. Go to Chrome `Manage Extension` and make sure `Developer Settings` are on
+5. Upload the `dist` folder
