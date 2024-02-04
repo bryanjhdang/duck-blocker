@@ -1,6 +1,4 @@
 // import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -10,7 +8,27 @@ function App() {
     chrome.scripting.executeScript({
       target: { tabId: tab.id! },
       func: () => {
-        document.body.style.backgroundColor = 'green';
+        // Adding an HTML h1 element
+        // const h1Element = document.createElement('h1');
+        // h1Element.textContent = 'Hello, World!';
+
+        // Adding an HTML img
+        const imgElement = document.createElement('img');
+        imgElement.src = chrome.runtime.getURL('images/duck.jpg');
+
+        // Styling the img element
+        imgElement.style.position = 'fixed';
+        imgElement.style.top = '0';
+        imgElement.style.left = '0';
+        imgElement.style.padding = '10px';
+        imgElement.style.width = '300px'; // Set the desired width
+        imgElement.style.height = '300px'; // Set the desired height
+        imgElement.style.zIndex = '9999'; // Setting a high z-index to ensure it's above everything else
+
+        // Appending the img element to the document body
+        document.body.appendChild(imgElement);
+
+        // document.body.style.backgroundColor = 'green';
       }
     });
   }
@@ -26,15 +44,7 @@ function App() {
   // }
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+      <h1>Extension</h1>
       <div className="card">
         <button onClick={() => changeColorOnClick()}>
          Change Color

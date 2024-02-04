@@ -14,5 +14,11 @@
   "host_permissions": [
       "https://*/*",
       "http://*/*"
+  ],
+  "web_accessible_resources": [
+    { 
+      "resources": ["images/duck.jpg"],
+      "matches": ["<all_urls>"]
+    }
   ]
 }
