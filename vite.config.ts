@@ -8,8 +8,8 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        main: 'index.html',
-        options: 'options.html'
+        main: './src/pages/popup/index.html',
+        options: './src/pages/options/index.html'
       }
     }
   }

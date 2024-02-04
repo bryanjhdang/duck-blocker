@@ -3,9 +3,9 @@
   "name": "vite-ts-react-test",
   "version": "1.0",
   "description": "",
-  "options_page": "options.html",
+  "options_page": "./src/pages/options/index.html",
   "action": {
-      "default_popup": "index.html"
+      "default_popup": "./src/pages/popup/index.html"
   },
   "permissions": [
       "scripting",
