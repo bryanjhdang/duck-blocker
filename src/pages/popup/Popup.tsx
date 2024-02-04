@@ -8,30 +8,47 @@ function Popup() {
     chrome.scripting.executeScript({
       target: { tabId: tab.id! },
       func: () => {
-        // Adding an HTML h1 element
-        // const h1Element = document.createElement('h1');
-        // h1Element.textContent = 'Hello, World!';
-
-        // Adding an HTML img
         const imgElement = document.createElement('img');
         imgElement.src = chrome.runtime.getURL('images/duck.jpg');
-
-        // Styling the img element
+  
         imgElement.style.position = 'fixed';
         imgElement.style.top = '0';
         imgElement.style.left = '0';
-        imgElement.style.padding = '10px';
-        imgElement.style.width = '300px'; // Set the desired width
-        imgElement.style.height = '300px'; // Set the desired height
-        imgElement.style.zIndex = '9999'; // Setting a high z-index to ensure it's above everything else
-
-        // Appending the img element to the document body
+        imgElement.style.width = '300px';
+        imgElement.style.height = '300px';
+        imgElement.style.zIndex = '9999';
+  
         document.body.appendChild(imgElement);
-
-        // document.body.style.backgroundColor = 'green';
-      }
+  
+        let posX = 0;
+        let posY = 0;
+        let speedX = 2;
+        let speedY = 2;
+  
+        const moveElement = () => {
+          posX += speedX;
+          posY += speedY;
+  
+          if (posX + 300 >= window.innerWidth || posX <= 0) {
+            speedX *= -1;
+          }
+  
+          if (posY + 300 >= window.innerHeight || posY <= 0) {
+            speedY *= -1;
+          }
+  
+          imgElement.style.left = `${posX}px`;
+          imgElement.style.top = `${posY}px`;
+  
+          requestAnimationFrame(moveElement);
+        };
+  
+        moveElement();
+      },
     });
-  }
+  };
+  
+  
 
   // const onClick = async () => {
   //   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
