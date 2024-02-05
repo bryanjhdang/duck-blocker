@@ -10,3 +10,5 @@ The duck will mind its own business on the screen while you do your work. Create
 3. `npm run build`
 4. Go to Chrome `Manage Extension` and make sure `Developer Settings` are on
 5. Click on `Load unpacked` and upload the `dist` folder
+
+> This project was built off a [hackathon project](https://github.com/bryanjhdang/journeyhacks-2024) for JourneyHacks 2024.
