@@ -1,4 +1,5 @@
 // import { useState } from 'react'
+import { Title } from '@mantine/core';
 import { Switch } from '@mantine/core';
 import BackgroundColorOptions from './components/BackgroundColorOptions';
 import TabColorOptions from './components/TabColorOptions';
@@ -65,7 +66,8 @@ function Popup() {
   // }
   return (
     <>
-      <h1>Duck Blocker</h1>
+      <Title order={1}>Duck Blocker</Title>
+  
       <div className="card">
         <button onClick={() => changeColorOnClick()}>
          Turn on Duck
