@@ -1,8 +1,9 @@
 // import { useState } from 'react'
 import './Popup.css'
-import BackgroundColorOptions from './BackgroundColorOptions';
-import TabColorOptions from './TabColorOptions';
-import OptionsButton from './OptionsButton';
+import BackgroundColorOptions from './components/BackgroundColorOptions';
+import TabColorOptions from './components/TabColorOptions';
+import BlockSiteButton from './components/BlockSiteButton';
+import OptionsButton from './components/OptionsButton';
 
 function Popup() {
   // const [count, setCount] = useState(0) 
@@ -70,8 +71,10 @@ function Popup() {
          Turn on Duck
         </button>
         
+        
         <BackgroundColorOptions/>
         <TabColorOptions/>
+        <BlockSiteButton/>
         <OptionsButton/>
       </div>
       

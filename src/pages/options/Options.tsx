@@ -3,8 +3,9 @@
 function Options() {
   return (
     <>
-      <h1>Settings</h1>
-      <p>Edit your block list here!</p>
+      <h1>Duck Blocker</h1>
+      <p>Block your websites!</p>
+      
     </>
   )
 }
