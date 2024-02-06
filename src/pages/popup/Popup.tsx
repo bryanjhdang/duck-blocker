@@ -1,9 +1,11 @@
 // import { useState } from 'react'
-import './Popup.css'
+import { Title } from '@mantine/core';
+import { Switch } from '@mantine/core';
 import BackgroundColorOptions from './components/BackgroundColorOptions';
 import TabColorOptions from './components/TabColorOptions';
 import BlockSiteButton from './components/BlockSiteButton';
 import OptionsButton from './components/OptionsButton';
+import './Popup.css'
 
 function Popup() {
   // const [count, setCount] = useState(0) 
@@ -64,14 +66,18 @@ function Popup() {
   //   });
   // }
   return (
-    <>
-      <h1>Duck Blocker</h1>
+    <div className='popup'>
+      <Title order={1}>Duck Blocker</Title>
+  
       <div className="card">
         <button onClick={() => changeColorOnClick()}>
-         Turn on Duck
+        Turn on Duck
         </button>
         
-        
+        <Switch>
+          defaultChecked
+          label="test"
+        </Switch>
         <BackgroundColorOptions/>
         <TabColorOptions/>
         <BlockSiteButton/>
@@ -81,7 +87,7 @@ function Popup() {
       <p className="read-the-docs">
         Please rate us!
       </p>
-    </>
+    </div>
   )
 }
 

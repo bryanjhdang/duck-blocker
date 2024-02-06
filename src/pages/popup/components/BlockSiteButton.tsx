@@ -1,5 +1,7 @@
+import { Button } from '@mantine/core';
+
 export default function BlockSiteButton() {
   return (
-    <button>Block Site</button>
+    <Button variant='filled'>Block Site</Button>
   );
 }

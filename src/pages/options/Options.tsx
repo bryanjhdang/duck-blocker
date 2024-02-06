@@ -1,10 +1,10 @@
 // import { useState } from 'react'
+// import { Switch } from '@mantine/core';
 
 function Options() {
   return (
     <>
-      <h1>Duck Blocker</h1>
-      <p>Block your websites!</p>
+      <p>Hello</p>
     </>
   )
 }
