@@ -5,6 +5,7 @@ import BackgroundColorOptions from './components/BackgroundColorOptions';
 import TabColorOptions from './components/TabColorOptions';
 import BlockSiteButton from './components/BlockSiteButton';
 import OptionsButton from './components/OptionsButton';
+import './Popup.css'
 
 function Popup() {
   // const [count, setCount] = useState(0) 
@@ -65,12 +66,12 @@ function Popup() {
   //   });
   // }
   return (
-    <>
+    <div className='popup'>
       <Title order={1}>Duck Blocker</Title>
   
       <div className="card">
         <button onClick={() => changeColorOnClick()}>
-         Turn on Duck
+        Turn on Duck
         </button>
         
         <Switch>
@@ -86,7 +87,7 @@ function Popup() {
       <p className="read-the-docs">
         Please rate us!
       </p>
-    </>
+    </div>
   )
 }
 
