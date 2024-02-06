@@ -3,7 +3,8 @@
 function Options() {
   return (
     <>
-      <h1>Options Page</h1>
+      <h1>Settings</h1>
+      <p>Edit your block list here!</p>
     </>
   )
 }

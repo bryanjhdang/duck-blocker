@@ -1,5 +1,8 @@
 // import { useState } from 'react'
 import './Popup.css'
+import BackgroundColors from './BackgroundColors';
+import TabColors from './TabColors';
+import OptionsButtons from './OptionsButton';
 
 function Popup() {
   // const [count, setCount] = useState(0) 
@@ -61,17 +64,19 @@ function Popup() {
   // }
   return (
     <>
-      <h1>Extension</h1>
+      <h1>Duck Blocker</h1>
       <div className="card">
         <button onClick={() => changeColorOnClick()}>
-         Change Color
+         Turn on Duck
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        
+        <BackgroundColors/>
+        <TabColors/>
+        <OptionsButtons/>
       </div>
+      
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Please rate us!
       </p>
     </>
   )
