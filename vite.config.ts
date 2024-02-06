@@ -9,7 +9,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './src/pages/popup/index.html',
-        options: './src/pages/options/index.html'
+        options: './src/pages/options/index.html',
+        blocked: './src/pages/blocked/index.html'
       }
     }
   }
