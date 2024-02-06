@@ -1,5 +1,7 @@
+import { Button } from '@mantine/core';
+
 export default function OptionsButtons() {
   return (
-    <button>Options</button>
+    <Button variant='filled'>Options</Button>
   );
 }
