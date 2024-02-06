@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "vite-ts-react-test",
+  "name": "Duck Blocker",
   "version": "1.0",
-  "description": "",
+  "description": "Block websites to focus and work with a duck companion.",
   "options_page": "./src/pages/options/index.html",
   "action": {
       "default_popup": "./src/pages/popup/index.html"
