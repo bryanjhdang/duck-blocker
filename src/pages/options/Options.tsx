@@ -5,7 +5,6 @@ function Options() {
     <>
       <h1>Duck Blocker</h1>
       <p>Block your websites!</p>
-      
     </>
   )
 }
