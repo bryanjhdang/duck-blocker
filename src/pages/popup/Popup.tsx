@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import './Popup.css'
+import { Switch } from '@mantine/core';
 import BackgroundColorOptions from './components/BackgroundColorOptions';
 import TabColorOptions from './components/TabColorOptions';
 import BlockSiteButton from './components/BlockSiteButton';
@@ -71,7 +71,10 @@ function Popup() {
          Turn on Duck
         </button>
         
-        
+        <Switch>
+          defaultChecked
+          label="test"
+        </Switch>
         <BackgroundColorOptions/>
         <TabColorOptions/>
         <BlockSiteButton/>
